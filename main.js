@@ -12,11 +12,11 @@ var dessertButton = document.querySelector('#dessert');
 var entireMealButton = document.querySelector('#entire-meal');
 var letsCookButton = document.querySelector('.lets-cook');
 var clearButton = document.querySelector('.clear');
-var secondBlock = document.querySelector('#second-block');
+var secondBlock = document.querySelector('.make');
+var cookpot = document.querySelector('.cookpot')
+var youShouldMake = document.querySelector('.make1')
+var placeholder = document.querySelector('.make2')
 
-//innerHTML would show up in the white box.
-//or add a p tag in the div
-// style p in CSS
 
 var sides = [
 "Mac and Cheese",
@@ -116,14 +116,60 @@ var desserts = [
 ]
 
 
-
-
+letsCookButton.addEventListener('click', returnDish);
+clearButton.addEventListener('click', clearDish);
 
 function getRandomIndex(array) {
   var randomArrayIndex = Math.floor(Math.random() * array.length);
   return array[randomArrayIndex]
 }
 
-function returnDish() {
+function hide(element){
+  element.classList.add('hidden')
+}
+function show(element){
+  element.classList.remove('hidden')
+}
 
+function returnDish() {
+  event.preventDefault();
+  if(sideButton.checked === true){
+  var newSide = getRandomIndex(sides);
+
+  hide(cookpot);
+  show(placeholder);
+  placeholder.innerHTML = `${newSide}`;
+  show(youShouldMake);
+  show(clearButton);
+} else if(mainButton.checked === true){
+  var newMain = getRandomIndex(mains);
+  hide(cookpot);
+  show(placeholder);
+  placeholder.innerHTML = `${newMain}`;
+  show(youShouldMake);
+  show(clearButton);
+} else if(dessertButton.checked === true){
+  var newDessert = getRandomIndex(desserts);
+  hide(cookpot);
+  show(placeholder);
+  placeholder.innerHTML = `${newDessert}`;
+  show(youShouldMake);
+  show(clearButton);
+} else if(entireMealButton.checked === true){
+  var newSide = getRandomIndex(sides);
+  var newMain = getRandomIndex(mains);
+  var newDessert = getRandomIndex(desserts);
+  hide(cookpot);
+  show(placeholder);
+  placeholder.innerHTML = `${newMain} with a side of ${newSide} and ${newDessert} for dessert!`;
+  show(youShouldMake);
+  show(clearButton);
+  }
+}
+
+function clearDish() {
+  hide(placeholder);
+  show(cookpot);
+  hide(clearButton);
+  hide(youShouldMake);
 }

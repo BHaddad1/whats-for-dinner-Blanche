@@ -18,19 +18,19 @@
       <h2 class="block-header">What Are You Looking For?</h2>
         <form>
           <div class="radio">
-            <input type="radio" id="side" value="side"></input>
+            <input type="radio" id="side" name="button" value="side"></input>
             <label for="side">Side</label>
           </div>
           <div class="radio">
-            <input type="radio" id="main" value="main"></input>
+            <input type="radio" id="main" name="button" value="main"></input>
             <label for="main">Main Dish</label>
           </div>
           <div class="radio">
-          <input type="radio" id="dessert" value="dessert"></input>
+          <input type="radio" id="dessert" name="button" value="dessert"></input>
           <label for="dessert">Dessert</label>
         </div>
         <div class="radio">
-          <input type="radio" id="entire-meal" value="entire-meal"></input>
+          <input type="radio" id="entire-meal" name="button" value="entire-meal"></input>
           <label for="entire-meal">Entire Meal</label>
         </div>
         <div>
@@ -39,10 +39,12 @@
       </form>
     </div>
     <div class="second-block">
-      <img src="assets/cookpot.svg" alt="Cookpot">
-      <p class='clear-container hidden'>
+      <img class="cookpot" src="assets/cookpot.svg" alt="Cookpot">
+      <p class='make1 hidden'><em>You should make:</em></p>
+      <p class='make2 hidden'>Placeholder</p>
+      <div class='clear-container'>
         <Button class="clear hidden">CLEAR</Button>
-      </p>
+      </div>
     </div>
   </section>
 
