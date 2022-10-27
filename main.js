@@ -12,9 +12,10 @@ var dessertButton = document.querySelector('#dessert');
 var entireMealButton = document.querySelector('#entire-meal');
 var letsCookButton = document.querySelector('.lets-cook');
 var clearButton = document.querySelector('.clear');
-var secondBlock = document.querySelector('.clear-container');
-var cookpot = document.querySelector('.second-block')
-var youShouldMake = document.querySelector('.make')
+var secondBlock = document.querySelector('.make');
+var cookpot = document.querySelector('.cookpot')
+var youShouldMake = document.querySelector('.make1')
+var placeholder = document.querySelector('.make2')
 
 
 var sides = [
@@ -114,18 +115,49 @@ var desserts = [
   "Macarons",
 ]
 
-sideButton.addEventListener('click', )
-
-
+letsCookButton.addEventListener('click', returnDish);
+clearButton.addEventListener('click', clearDish);
 
 function getRandomIndex(array) {
   var randomArrayIndex = Math.floor(Math.random() * array.length);
   return array[randomArrayIndex]
 }
 
-function returnSide() {
+function returnDish() {
+  event.preventDefault();
+  if(sideButton.checked === true){
   var newSide = getRandomIndex(sides);
-  secondBlock.innerText = `You should make ${newSide}`;
   cookpot.classList.add('hidden');
-  make.classList.remove('hidden');
+  placeholder.classList.remove('hidden')
+  placeholder.innerHTML = `${newSide}`;
+  youShouldMake.classList.remove('hidden');
+  clearButton.classList.remove('hidden');
+} else if(mainButton.checked === true){
+  var newMain = getRandomIndex(mains);
+  cookpot.classList.add('hidden');
+  placeholder.classList.remove('hidden');
+  placeholder.innerHTML = `${newMain}`;
+  youShouldMake.classList.remove('hidden');
+  clearButton.classList.remove('hidden');
+} else if(dessertButton.checked === true){
+  var newDessert = getRandomIndex(desserts);
+  cookpot.classList.add('hidden');
+  placeholder.classList.remove('hidden')
+  placeholder.innerHTML = `${newDessert}`;
+  youShouldMake.classList.remove('hidden');
+  clearButton.classList.remove('hidden');
+} else if(entireMealButton.checked === true){
+  var newSide = getRandomIndex(sides);
+  var newMain = getRandomIndex(mains);
+  var newDessert = getRandomIndex(desserts);
+  cookpot.classList.add('hidden');
+  placeholder.classList.remove('hidden');
+  placeholder.innerHTML = `${newSide}, ${newMain}, ${newDessert}!`;
+  youShouldMake.classList.remove('hidden');
+  clearButton.classList.remove('hidden');
+  }
+}
+
+function clearDish() {
+  
 }
