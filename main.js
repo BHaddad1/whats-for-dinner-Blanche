@@ -14,11 +14,8 @@ var letsCookButton = document.querySelector('.lets-cook');
 var clearButton = document.querySelector('.clear');
 var secondBlock = document.querySelector('.clear-container');
 var cookpot = document.querySelector('.second-block')
-var youShouldMake = document.querySelector('.')
+var youShouldMake = document.querySelector('.make')
 
-//innerHTML would show up in the white box.
-//or add a p tag in the div
-// style p in CSS
 
 var sides = [
 "Mac and Cheese",
@@ -117,7 +114,7 @@ var desserts = [
   "Macarons",
 ]
 
-sideButton.addEventListener('')
+sideButton.addEventListener('click', )
 
 
 
@@ -130,5 +127,5 @@ function returnSide() {
   var newSide = getRandomIndex(sides);
   secondBlock.innerText = `You should make ${newSide}`;
   cookpot.classList.add('hidden');
-
+  make.classList.remove('hidden');
 }
