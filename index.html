@@ -8,15 +8,40 @@
     <title>What's For Dinner?</title>
   </head>
   <body>
+
     <nav>
       <h1>&nbsp;&nbsp;&nbsp;What's For Dinner?</h1>
     </nav>
-    <main>
-      <article>
-        <section class="flex-box"></section>
-        <section class="flex-box"></section>
-      </article>
-    </main>
+
+    <section class="block">
+      <div id="first-block">
+      <h2 class=block-header>What Are You Looking For?</h2>
+        <form>
+          <div class="radio">
+            <input type="radio" id="side" value="side"></input>
+            <label for="side">Side</label>
+          </div>
+          <div class="radio">
+            <input type="radio" id="main" value="main"></input>
+            <label for="main">Main Dish</label>
+          </div>
+          <div class="radio">
+          <input type="radio" id="dessert" value="dessert"></input>
+          <label for="dessert">Dessert</label>
+        </div>
+        <div class="radio">
+          <input type="radio" id="entire-meal" value="entire-meal"></input>
+          <label for="entire-meal">Entire Meal</label>
+        </div>
+        <div class="button">
+          <Button>LET'S COOK!</Button>
+        </div>
+      </form>
+    </div>
+    <div id="second-block">
+    </div>
+  </section>
+
   </body>
   <script type="text/javascript" src="main.js"></script>
 </html>
