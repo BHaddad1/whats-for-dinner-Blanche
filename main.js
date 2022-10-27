@@ -12,7 +12,9 @@ var dessertButton = document.querySelector('#dessert');
 var entireMealButton = document.querySelector('#entire-meal');
 var letsCookButton = document.querySelector('.lets-cook');
 var clearButton = document.querySelector('.clear');
-var secondBlock = document.querySelector('#second-block');
+var secondBlock = document.querySelector('.clear-container');
+var cookpot = document.querySelector('.second-block')
+var youShouldMake = document.querySelector('.')
 
 //innerHTML would show up in the white box.
 //or add a p tag in the div
@@ -115,7 +117,7 @@ var desserts = [
   "Macarons",
 ]
 
-
+sideButton.addEventListener('')
 
 
 
@@ -124,6 +126,9 @@ function getRandomIndex(array) {
   return array[randomArrayIndex]
 }
 
-function returnDish() {
+function returnSide() {
+  var newSide = getRandomIndex(sides);
+  secondBlock.innerText = `You should make ${newSide}`;
+  cookpot.classList.add('hidden');
 
 }
