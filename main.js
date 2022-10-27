@@ -115,6 +115,7 @@ var desserts = [
   "Macarons",
 ]
 
+
 letsCookButton.addEventListener('click', returnDish);
 clearButton.addEventListener('click', clearDish);
 
@@ -134,6 +135,7 @@ function returnDish() {
   event.preventDefault();
   if(sideButton.checked === true){
   var newSide = getRandomIndex(sides);
+
   hide(cookpot);
   show(placeholder);
   placeholder.innerHTML = `${newSide}`;
