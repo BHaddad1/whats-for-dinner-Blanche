@@ -5,23 +5,45 @@
   <head>
     <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>What's For Dinner?</title>
   </head>
   <body>
-    <title>What's For Dinner?</title>
+
     <nav>
       <h1>&nbsp;&nbsp;&nbsp;What's For Dinner?</h1>
     </nav>
-    <style>
-      body {
-        background-image: url('assets/burger-friends.jpg');
-        background-repeat: no-repeatl
-        background-attachment: fixed;
-        background-size: cover
-      }
-    </style>
-    <article></article>
-    <main>
-    </main>
+
+    <section class="block">
+      <div id="first-block">
+      <h2 class=block-header>What Are You Looking For?</h2>
+        <form>
+          <div class="radio">
+            <input type="radio" id="side" value="side"></input>
+            <label for="side">Side</label>
+          </div>
+          <div class="radio">
+            <input type="radio" id="main" value="main"></input>
+            <label for="main">Main Dish</label>
+          </div>
+          <div class="radio">
+          <input type="radio" id="dessert" value="dessert"></input>
+          <label for="dessert">Dessert</label>
+        </div>
+        <div class="radio">
+          <input type="radio" id="entire-meal" value="entire-meal"></input>
+          <label for="entire-meal">Entire Meal</label>
+        </div>
+        <div>
+          <Button>LET'S COOK!</Button>
+        </div>
+      </form>
+    </div>
+    <div id="second-block">
+      <img src="assets/cookpot.svg" alt="Cookpot">
+      </img>
+    </div>
+  </section>
+
   </body>
   <script type="text/javascript" src="main.js"></script>
 </html>
