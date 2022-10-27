@@ -123,41 +123,51 @@ function getRandomIndex(array) {
   return array[randomArrayIndex]
 }
 
+function hide(element){
+  element.classList.add('hidden')
+}
+function show(element){
+  element.classList.remove('hidden')
+}
+
 function returnDish() {
   event.preventDefault();
   if(sideButton.checked === true){
   var newSide = getRandomIndex(sides);
-  cookpot.classList.add('hidden');
-  placeholder.classList.remove('hidden')
+  hide(cookpot);
+  show(placeholder);
   placeholder.innerHTML = `${newSide}`;
-  youShouldMake.classList.remove('hidden');
-  clearButton.classList.remove('hidden');
+  show(youShouldMake);
+  show(clearButton);
 } else if(mainButton.checked === true){
   var newMain = getRandomIndex(mains);
-  cookpot.classList.add('hidden');
-  placeholder.classList.remove('hidden');
+  hide(cookpot);
+  show(placeholder);
   placeholder.innerHTML = `${newMain}`;
-  youShouldMake.classList.remove('hidden');
-  clearButton.classList.remove('hidden');
+  show(youShouldMake);
+  show(clearButton);
 } else if(dessertButton.checked === true){
   var newDessert = getRandomIndex(desserts);
-  cookpot.classList.add('hidden');
-  placeholder.classList.remove('hidden')
+  hide(cookpot);
+  show(placeholder);
   placeholder.innerHTML = `${newDessert}`;
-  youShouldMake.classList.remove('hidden');
-  clearButton.classList.remove('hidden');
+  show(youShouldMake);
+  show(clearButton);
 } else if(entireMealButton.checked === true){
   var newSide = getRandomIndex(sides);
   var newMain = getRandomIndex(mains);
   var newDessert = getRandomIndex(desserts);
-  cookpot.classList.add('hidden');
-  placeholder.classList.remove('hidden');
-  placeholder.innerHTML = `${newSide}, ${newMain}, ${newDessert}!`;
-  youShouldMake.classList.remove('hidden');
-  clearButton.classList.remove('hidden');
+  hide(cookpot);
+  show(placeholder);
+  placeholder.innerHTML = `${newMain} with a side of ${newSide} and ${newDessert} for dessert!`;
+  show(youShouldMake);
+  show(clearButton);
   }
 }
 
 function clearDish() {
-  
+  hide(placeholder);
+  show(cookpot);
+  hide(clearButton);
+  hide(youShouldMake);
 }
