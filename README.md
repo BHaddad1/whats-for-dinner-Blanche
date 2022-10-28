@@ -5,8 +5,8 @@ This app finally answers the age-old question: What should I have for dinner? Ju
 
 
 ### Installation Instructions:
-To use this app, go to GitHub,
-(What steps does a person have to take to get your app cloned down and running?)
+To use this app, fork this repository, clone it down to your machine in a directory of your choosing, and run 'open index.html' in your Terminal.
+
 
 ### Preview of App:
  (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
@@ -15,7 +15,7 @@ To use this app, go to GitHub,
 (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
 
 ### Learning Goals:
-The goals of this project was to learn how to work with HTML, CSS, and JavaScript together to manipulate the DOM. 
+The goals of this project was to learn how to work with HTML, CSS, and JavaScript together to manipulate the DOM.
 
 ### Wins + Challenges:
-[//]: <> (What are 2-3 wins you have from this project? What were some challenges you faced - and how did you get over them?)
+Some wins were writing the functionality in JS, and styling the DOM with CSS. Some challenges I faced were also styling the DOM in CSS, and I navigated that with loads of help from Professor Google, and some CSS/HTML experts in my Turing cohort. 
