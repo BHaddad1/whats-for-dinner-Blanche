@@ -13,10 +13,10 @@ To use this app, fork this repository, clone it down to your machine in a direct
 ![alt text](ProjectImage)
 
 
- 
+
 
 ### Context:
-I worked on this project for two days. I am in my first module at Turing, and three weeks in. 
+I worked on this project for two days. I am in my first module at Turing, and three weeks in.
 
 
 ### Learning Goals:

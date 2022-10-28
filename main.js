@@ -124,46 +124,33 @@ function getRandomIndex(array) {
   return array[randomArrayIndex]
 }
 
-function hide(element){
-  element.classList.add('hidden')
-}
-function show(element){
-  element.classList.remove('hidden')
+function hideCookpot(){
+  cookpot.classList.add('hidden');
+  youShouldMake.classList.remove('hidden');
+  placeholder.classList.remove('hidden');
+  clearButton.classList.remove('hidden');
 }
 
 function returnDish() {
   event.preventDefault();
   if(sideButton.checked === true){
   var newSide = getRandomIndex(sides);
-
-  hide(cookpot);
-  show(placeholder);
   placeholder.innerHTML = `${newSide}`;
-  show(youShouldMake);
-  show(clearButton);
+  hideCookpot();
 } else if(mainButton.checked === true){
   var newMain = getRandomIndex(mains);
-  hide(cookpot);
-  show(placeholder);
   placeholder.innerHTML = `${newMain}`;
-  show(youShouldMake);
-  show(clearButton);
+  hideCookpot();
 } else if(dessertButton.checked === true){
   var newDessert = getRandomIndex(desserts);
-  hide(cookpot);
-  show(placeholder);
   placeholder.innerHTML = `${newDessert}`;
-  show(youShouldMake);
-  show(clearButton);
+  hideCookpot();
 } else if(entireMealButton.checked === true){
   var newSide = getRandomIndex(sides);
   var newMain = getRandomIndex(mains);
   var newDessert = getRandomIndex(desserts);
-  hide(cookpot);
-  show(placeholder);
   placeholder.innerHTML = `${newMain} with a side of ${newSide} and ${newDessert} for dessert!`;
-  show(youShouldMake);
-  show(clearButton);
+  hideCookpot();
   }
 }
 
