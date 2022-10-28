@@ -27,6 +27,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+span {
+  color: red;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+}
 
 .block {
   display: flex;
