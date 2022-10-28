@@ -9,6 +9,7 @@ To use this app, fork this repository, clone it down to your machine in a direct
 
 
 ### Preview of App:
+![alt text](file:///Users/blanchehaddad/Desktop/Image%20for%20README.png)
  (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
 
 ### Context:
@@ -18,4 +19,4 @@ To use this app, fork this repository, clone it down to your machine in a direct
 The goals of this project was to learn how to work with HTML, CSS, and JavaScript together to manipulate the DOM.
 
 ### Wins + Challenges:
-Some wins were writing the functionality in JS, and styling the DOM with CSS. Some challenges I faced were also styling the DOM in CSS, and I navigated that with loads of help from Professor Google, and some CSS/HTML experts in my Turing cohort. 
+Some wins were writing the functionality in JS, and styling the DOM with CSS. Some challenges I faced were also styling the DOM in CSS, and I navigated that with loads of help from Professor Google, and some CSS/HTML experts in my Turing cohort.
