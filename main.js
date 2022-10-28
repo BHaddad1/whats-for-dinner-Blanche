@@ -155,8 +155,8 @@ function returnDish() {
 }
 
 function clearDish() {
-  hide(placeholder);
-  show(cookpot);
-  hide(clearButton);
-  hide(youShouldMake);
+  cookpot.classList.remove('hidden');
+  youShouldMake.classList.add('hidden');
+  placeholder.classList.add('hidden');
+  clearButton.classList.add('hidden');
 }
