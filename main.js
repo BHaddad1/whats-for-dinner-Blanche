@@ -137,20 +137,24 @@ function returnDish() {
   var newSide = getRandomIndex(sides);
   placeholder.innerText = `${newSide}`;
   hideCookpot();
+  sideButton.checked = false;
 } else if(mainButton.checked === true){
   var newMain = getRandomIndex(mains);
   placeholder.innerText = `${newMain}`;
   hideCookpot();
+  mainButton.checked = false;
 } else if(dessertButton.checked === true){
   var newDessert = getRandomIndex(desserts);
   placeholder.innerText = `${newDessert}`;
   hideCookpot();
+  dessertButton.checked = false;
 } else if(entireMealButton.checked === true){
   var newSide = getRandomIndex(sides);
   var newMain = getRandomIndex(mains);
   var newDessert = getRandomIndex(desserts);
   placeholder.innerText = `${newMain} with a side of ${newSide} and ${newDessert} for dessert!`;
   hideCookpot();
+  entireMealButton.checked = false;
   }
 }
 
