@@ -10,6 +10,9 @@ To use this app, fork this repository, clone it down to your machine in a direct
 
 ### Preview of App:
 
+![alt text](ProjectImage)
+
+
 
 
 ### Context:
