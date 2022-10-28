@@ -135,28 +135,28 @@ function returnDish() {
   event.preventDefault();
   if(sideButton.checked === true){
   var newSide = getRandomIndex(sides);
-  placeholder.innerHTML = `${newSide}`;
+  placeholder.innerText = `${newSide}`;
   hideCookpot();
 } else if(mainButton.checked === true){
   var newMain = getRandomIndex(mains);
-  placeholder.innerHTML = `${newMain}`;
+  placeholder.innerText = `${newMain}`;
   hideCookpot();
 } else if(dessertButton.checked === true){
   var newDessert = getRandomIndex(desserts);
-  placeholder.innerHTML = `${newDessert}`;
+  placeholder.innerText = `${newDessert}`;
   hideCookpot();
 } else if(entireMealButton.checked === true){
   var newSide = getRandomIndex(sides);
   var newMain = getRandomIndex(mains);
   var newDessert = getRandomIndex(desserts);
-  placeholder.innerHTML = `${newMain} with a side of ${newSide} and ${newDessert} for dessert!`;
+  placeholder.innerText = `${newMain} with a side of ${newSide} and ${newDessert} for dessert!`;
   hideCookpot();
   }
 }
 
 function clearDish() {
-  hide(placeholder);
-  show(cookpot);
-  hide(clearButton);
-  hide(youShouldMake);
+  cookpot.classList.remove('hidden');
+  youShouldMake.classList.add('hidden');
+  placeholder.classList.add('hidden');
+  clearButton.classList.add('hidden');
 }
