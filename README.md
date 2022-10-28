@@ -9,7 +9,7 @@ To use this app, fork this repository, clone it down to your machine in a direct
 
 
 ### Preview of App:
-![alt text](ProjectImage.png)
+Loom_Message_-_27_October_2022_AdobeExpress (1).gif
  
 
 ### Context:
