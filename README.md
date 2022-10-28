@@ -9,7 +9,7 @@ To use this app, fork this repository, clone it down to your machine in a direct
 
 
 ### Preview of App:
-![alt text](ImageforREADME.png)
+![alt text](ProjectImage.png)
  (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
  
 
