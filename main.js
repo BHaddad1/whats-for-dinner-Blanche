@@ -150,6 +150,7 @@ function returnDish() {
   entireMealButton.checked = false;
 } else if(!sideButton.checked && !mainButton.checked && !dessertButton.checked && !entireMealButton.checked){
   placeholder.classList.remove('hidden');
+  clearButton.classList.remove('hidden');
   placeholder.innerText = `Error! Please select an option.`
 }
 }
