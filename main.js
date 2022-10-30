@@ -108,10 +108,7 @@ var desserts = [
 ]
 
 
-letsCookButton.addEventListener('click', function() {
-  returnDish();
-  doesNotCook();
-});
+letsCookButton.addEventListener('click', returnDish);
 clearButton.addEventListener('click', clearDish);
 
 
@@ -151,7 +148,10 @@ function returnDish() {
   placeholder.innerText = `${newMain} with a side of ${newSide} and ${newDessert} for dessert!`;
   hideCookpot();
   entireMealButton.checked = false;
-  }
+} else if(!sideButton.checked && !mainButton.checked && !dessertButton.checked && !entireMealButton.checked){
+  placeholder.classList.remove('hidden');
+  placeholder.innerText = `Error! Please select an option.`
+}
 }
 
 function clearDish() {
