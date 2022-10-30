@@ -126,22 +126,22 @@ function hideCookpot(){
 
 function returnDish() {
   event.preventDefault();
-  if(sideButton.checked === true){
+  if(sideButton.checked){
   var newSide = getRandomIndex(sides);
   placeholder.innerText = `${newSide}`;
   hideCookpot();
   sideButton.checked = false;
-} else if(mainButton.checked === true){
+} else if(mainButton.checked){
   var newMain = getRandomIndex(mains);
   placeholder.innerText = `${newMain}`;
   hideCookpot();
   mainButton.checked = false;
-} else if(dessertButton.checked === true){
+} else if(dessertButton.checked){
   var newDessert = getRandomIndex(desserts);
   placeholder.innerText = `${newDessert}`;
   hideCookpot();
   dessertButton.checked = false;
-} else if(entireMealButton.checked === true){
+} else if(entireMealButton.checked){
   var newSide = getRandomIndex(sides);
   var newMain = getRandomIndex(mains);
   var newDessert = getRandomIndex(desserts);
