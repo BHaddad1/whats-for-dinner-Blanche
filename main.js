@@ -161,10 +161,3 @@ function clearDish() {
   placeholder.classList.add('hidden');
   clearButton.classList.add('hidden');
 }
-
-function doesNotCook() {
-  if(!sideButton.checked && !mainButton.checked && !dessertButton.checked && !entireMealButton.checked){
-    placeholder.classList.remove('hidden');
-    placeholder.innerText = `Error! Please select a dish.`
-  }
-}
