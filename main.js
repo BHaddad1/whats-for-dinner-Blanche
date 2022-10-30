@@ -108,7 +108,10 @@ var desserts = [
 ]
 
 
-letsCookButton.addEventListener('click', returnDish);
+letsCookButton.addEventListener('click', function() {
+  returnDish();
+  doesNotCook();
+});
 clearButton.addEventListener('click', clearDish);
 
 
@@ -156,4 +159,11 @@ function clearDish() {
   youShouldMake.classList.add('hidden');
   placeholder.classList.add('hidden');
   clearButton.classList.add('hidden');
+}
+
+function doesNotCook() {
+  if(!sideButton.checked && !mainButton.checked && !dessertButton.checked && !entireMealButton.checked){
+    placeholder.classList.remove('hidden');
+    placeholder.innerText = `Error! Please select a dish.`
+  }
 }
